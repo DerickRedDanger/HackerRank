@@ -57,19 +57,4 @@ def caesarCipher(s, k):
     encrypted= "".join(encrypting)
                 
     return encrypted
-    
 
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
-
-    n = int(input().strip())
-
-    s = input()
-
-    k = int(input().strip())
-
-    result = caesarCipher(s, k)
-
-    fptr.write(result + '\n')
-
-    fptr.close()

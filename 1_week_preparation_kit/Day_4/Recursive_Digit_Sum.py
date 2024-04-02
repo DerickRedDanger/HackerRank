@@ -45,18 +45,3 @@ def superDigit(n, k):
         lenght=len(n)
     
     return n
-
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
-
-    first_multiple_input = input().rstrip().split()
-
-    n = first_multiple_input[0]
-
-    k = int(first_multiple_input[1])
-
-    result = superDigit(n, k)
-
-    fptr.write(str(result) + '\n')
-
-    fptr.close()

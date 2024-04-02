@@ -28,18 +28,3 @@ def countingSort(arr):
         Counting_Sort[i] += 1
 
     return Counting_Sort
-                
-
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
-
-    n = int(input().strip())
-
-    arr = list(map(int, input().rstrip().split()))
-
-    result = countingSort(arr)
-
-    fptr.write(' '.join(map(str, result)))
-    fptr.write('\n')
-
-    fptr.close()
